@@ -29,7 +29,7 @@ export default function SingleCountry() {
                 {country.map((item) => (
                     <div
                         key={item.population}
-                        className="grid grid-cols-1 gap-8 md:grid-cols-2 md:place-items-center md:h-screen"
+                        className="grid grid-cols-1 gap-10 md:grid-cols-2 md:place-items-center md:h-screen"
                     >
                         <article>
                             <img src={item.flags.svg} alt={item.name.common} />
