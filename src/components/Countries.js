@@ -25,9 +25,9 @@ export default function Countries() {
         justify-center text-center h-screen text-4xl dark:text-white">Loading...</h1>
             ) : (
 
-                <section>
+                <section className="container mx-auto p-8">
                     {/* form */}
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+                    <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
                         {countries.map((country) => (
                             <Article key={country.name.common} {...country} />
                         ))}
