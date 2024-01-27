@@ -26,7 +26,9 @@ export default function Countries() {
         }
         getCountries();
     }, []);
-
+    useEffect(() => {
+        document.title = `All countries`;
+    }, []);
     async function searchCountry() {
         try {
             const rest = await fetch(`https://restcountries.com/v3.1/name/${searchText}`)
